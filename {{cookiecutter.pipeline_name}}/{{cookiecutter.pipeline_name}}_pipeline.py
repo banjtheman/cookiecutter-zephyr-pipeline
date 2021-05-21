@@ -11,8 +11,7 @@ REPLACE_PROJECT_IMPORT
 # python {{cookiecutter.pipeline_name}}_pipeline.py run ARGs
 # example : python {{cookiecutter.pipeline_name}}_pipeline.py run --input_dir example_files --output_dir data
 
-# can have the posthook change this file?
-class {{cookiecutter.pipeline_name}}Flow(FlowSpec):
+class REPLACE_PIPELINE_NAMEFlow(FlowSpec):
     """
     This flow will run the {{cookiecutter.pipeline_name}} pipeline
     """
@@ -82,4 +81,4 @@ if __name__ == "__main__":
     logging.basicConfig(
         format="%(asctime)s |%(levelname)s: %(message)s", level=loglevel
     )
-    {{cookiecutter.pipeline_name}Flow()
+    REPLACE_PIPELINE_NAMEFlow()
