@@ -16,7 +16,7 @@ class REPLACE_PIPELINE_NAMEFlow(FlowSpec):
     This flow will run the {{cookiecutter.pipeline_name}} pipeline
     """
 
-    # TODO define yoru args, these are ssample input and output dir args
+    # TODO define yoru args, these are sample input and output dir args
     # input_dir = Parameter(
     #     "input_dir",
     #     help="Location of sample inputs",
@@ -44,20 +44,13 @@ class REPLACE_PIPELINE_NAMEFlow(FlowSpec):
         # for file_name in os.listdir(self.input_dir):
         #     self.file_names.append(file_name)
 
-
+        # Example process for each file in a dir
         # self.next(self.create_dir, foreach="file_names")
 
-    @step
-    def REPLACE_MOUDLE_NAME(self):
-        """
-        REPLACE_MODULE_DESC
-        """
-        # TODO insert your module process here
+        REPLACE_START_STEP
 
-        self.next(
-            self.REPLACE_NEXT_MODULE,
-        )
 
+    REPLACE_MODULES
 
     # Example join step if you use a foreach statement
     # @step
